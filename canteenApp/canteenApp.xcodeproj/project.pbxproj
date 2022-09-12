@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAC6B65C28C836FA00D8590A /* canteenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B65B28C836FA00D8590A /* canteenAppApp.swift */; };
+		CAC6B66028C836FB00D8590A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC6B65F28C836FB00D8590A /* Assets.xcassets */; };
+		CAC6B66328C836FB00D8590A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC6B66228C836FB00D8590A /* Preview Assets.xcassets */; };
+		CAC6B66A28C8373300D8590A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAC6B66928C8373300D8590A /* GoogleService-Info.plist */; };
+		CAC6B66D28C837ED00D8590A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CAC6B66C28C837ED00D8590A /* FirebaseAuth */; };
+		CAC6B66F28C837ED00D8590A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CAC6B66E28C837ED00D8590A /* FirebaseFirestore */; };
+		CAC6B67128C837ED00D8590A /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CAC6B67028C837ED00D8590A /* FirebaseFirestoreSwift */; };
+		CAC6B67428C8389600D8590A /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B67328C8389600D8590A /* FoodItem.swift */; };
+		CAC6B67628C838AB00D8590A /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B67528C838AB00D8590A /* ItemViewModel.swift */; };
+		CAC6B67A28C838D200D8590A /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B67928C838D200D8590A /* Order.swift */; };
+		CAC6B67D28C8391000D8590A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B67C28C8391000D8590A /* ContentView.swift */; };
+		CAC6B67F28C8393200D8590A /* CreateOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B67E28C8393200D8590A /* CreateOrderView.swift */; };
+		CAC6B68128C8394300D8590A /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B68028C8394300D8590A /* FoodListView.swift */; };
+		CAC6B68328C8395100D8590A /* OrdersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B68228C8395100D8590A /* OrdersListView.swift */; };
+		CAC6B68528C850F200D8590A /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B68428C850F200D8590A /* AccountView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CAC6B65828C836FA00D8590A /* canteenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = canteenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC6B65B28C836FA00D8590A /* canteenAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canteenAppApp.swift; sourceTree = "<group>"; };
+		CAC6B65F28C836FB00D8590A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAC6B66228C836FB00D8590A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CAC6B66928C8373300D8590A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CAC6B67328C8389600D8590A /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		CAC6B67528C838AB00D8590A /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		CAC6B67928C838D200D8590A /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		CAC6B67C28C8391000D8590A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CAC6B67E28C8393200D8590A /* CreateOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderView.swift; sourceTree = "<group>"; };
+		CAC6B68028C8394300D8590A /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		CAC6B68228C8395100D8590A /* OrdersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListView.swift; sourceTree = "<group>"; };
+		CAC6B68428C850F200D8590A /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAC6B65528C836FA00D8590A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC6B66D28C837ED00D8590A /* FirebaseAuth in Frameworks */,
+				CAC6B66F28C837ED00D8590A /* FirebaseFirestore in Frameworks */,
+				CAC6B67128C837ED00D8590A /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAC6B64F28C836FA00D8590A = {
+			isa = PBXGroup;
+			children = (
+				CAC6B65A28C836FA00D8590A /* canteenApp */,
+				CAC6B65928C836FA00D8590A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAC6B65928C836FA00D8590A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAC6B65828C836FA00D8590A /* canteenApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAC6B65A28C836FA00D8590A /* canteenApp */ = {
+			isa = PBXGroup;
+			children = (
+				CAC6B67228C8388000D8590A /* Models */,
+				CAC6B67B28C8390300D8590A /* Views */,
+				CAC6B66928C8373300D8590A /* GoogleService-Info.plist */,
+				CAC6B65B28C836FA00D8590A /* canteenAppApp.swift */,
+				CAC6B65F28C836FB00D8590A /* Assets.xcassets */,
+				CAC6B66128C836FB00D8590A /* Preview Content */,
+			);
+			path = canteenApp;
+			sourceTree = "<group>";
+		};
+		CAC6B66128C836FB00D8590A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CAC6B66228C836FB00D8590A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CAC6B67228C8388000D8590A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAC6B67328C8389600D8590A /* FoodItem.swift */,
+				CAC6B67528C838AB00D8590A /* ItemViewModel.swift */,
+				CAC6B67928C838D200D8590A /* Order.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CAC6B67B28C8390300D8590A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CAC6B67C28C8391000D8590A /* ContentView.swift */,
+				CAC6B67E28C8393200D8590A /* CreateOrderView.swift */,
+				CAC6B68028C8394300D8590A /* FoodListView.swift */,
+				CAC6B68228C8395100D8590A /* OrdersListView.swift */,
+				CAC6B68428C850F200D8590A /* AccountView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAC6B65728C836FA00D8590A /* canteenApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAC6B66628C836FB00D8590A /* Build configuration list for PBXNativeTarget "canteenApp" */;
+			buildPhases = (
+				CAC6B65428C836FA00D8590A /* Sources */,
+				CAC6B65528C836FA00D8590A /* Frameworks */,
+				CAC6B65628C836FA00D8590A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = canteenApp;
+			packageProductDependencies = (
+				CAC6B66C28C837ED00D8590A /* FirebaseAuth */,
+				CAC6B66E28C837ED00D8590A /* FirebaseFirestore */,
+				CAC6B67028C837ED00D8590A /* FirebaseFirestoreSwift */,
+			);
+			productName = canteenApp;
+			productReference = CAC6B65828C836FA00D8590A /* canteenApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAC6B65028C836FA00D8590A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CAC6B65728C836FA00D8590A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CAC6B65328C836FA00D8590A /* Build configuration list for PBXProject "canteenApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAC6B64F28C836FA00D8590A;
+			packageReferences = (
+				CAC6B66B28C837ED00D8590A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = CAC6B65928C836FA00D8590A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAC6B65728C836FA00D8590A /* canteenApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAC6B65628C836FA00D8590A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC6B66328C836FB00D8590A /* Preview Assets.xcassets in Resources */,
+				CAC6B66028C836FB00D8590A /* Assets.xcassets in Resources */,
+				CAC6B66A28C8373300D8590A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAC6B65428C836FA00D8590A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC6B67628C838AB00D8590A /* ItemViewModel.swift in Sources */,
+				CAC6B67F28C8393200D8590A /* CreateOrderView.swift in Sources */,
+				CAC6B68128C8394300D8590A /* FoodListView.swift in Sources */,
+				CAC6B67D28C8391000D8590A /* ContentView.swift in Sources */,
+				CAC6B67428C8389600D8590A /* FoodItem.swift in Sources */,
+				CAC6B68328C8395100D8590A /* OrdersListView.swift in Sources */,
+				CAC6B68528C850F200D8590A /* AccountView.swift in Sources */,
+				CAC6B65C28C836FA00D8590A /* canteenAppApp.swift in Sources */,
+				CAC6B67A28C838D200D8590A /* Order.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CAC6B66428C836FB00D8590A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAC6B66528C836FB00D8590A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAC6B66728C836FB00D8590A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"canteenApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.edu.rmit.canteenApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAC6B66828C836FB00D8590A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"canteenApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.edu.rmit.canteenApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAC6B65328C836FA00D8590A /* Build configuration list for PBXProject "canteenApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAC6B66428C836FB00D8590A /* Debug */,
+				CAC6B66528C836FB00D8590A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAC6B66628C836FB00D8590A /* Build configuration list for PBXNativeTarget "canteenApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAC6B66728C836FB00D8590A /* Debug */,
+				CAC6B66828C836FB00D8590A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CAC6B66B28C837ED00D8590A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CAC6B66C28C837ED00D8590A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAC6B66B28C837ED00D8590A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CAC6B66E28C837ED00D8590A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAC6B66B28C837ED00D8590A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CAC6B67028C837ED00D8590A /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAC6B66B28C837ED00D8590A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CAC6B65028C836FA00D8590A /* Project object */;
+}
