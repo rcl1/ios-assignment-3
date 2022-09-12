@@ -9,7 +9,23 @@ import SwiftUI
 
 struct AccountView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            LinearGradient(colors: [Color.green, Color.brown], startPoint:.top, endPoint: .bottom)
+            ScrollView {
+                VStack {
+                    Image("A6MPic").resizable().scaledToFill()
+                    RoundView(icon : Image("A6MProfile")).offset(y: -50)
+                        .padding(.bottom, -50)
+                    Text("PLACEHOLDER").font(.system(size: 25))
+                    Text("PHOLS").font(.system(size: 25))
+                    VStack {
+                        NavigationLink {} label: {
+                            TableView(title: "Designer", content: "PLANEHOLDER", unit: "")
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
