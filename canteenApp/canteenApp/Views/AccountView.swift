@@ -8,19 +8,21 @@
 import SwiftUI
 
 struct AccountView: View {
+    @State var userProfile = "A6MProfile"
+    @State var userName = "NamelessONE"
+    
+    
     var body: some View {
         ZStack {
             LinearGradient(colors: [Color.green, Color.brown], startPoint:.top, endPoint: .bottom)
             ScrollView {
                 VStack {
-                    Image("A6MPic").resizable().scaledToFill()
-                    RoundView(icon : Image("A6MProfile")).offset(y: -50)
-                        .padding(.bottom, -50)
-                    Text("PLACEHOLDER").font(.system(size: 25))
-                    Text("PHOLS").font(.system(size: 25))
+                    RoundView(icon : Image(userProfile)).offset(y: -50)
+                        .padding(.top, 70).padding(.bottom, -50)
+                    Text(userName).font(.system(size: 25))
                     VStack {
                         NavigationLink {} label: {
-                            TableView(title: "Designer", content: "PLANEHOLDER", unit: "")
+                            TableView(title: "Designer", content: "PLANEHOLDER")
                         }
                     }
                 }
