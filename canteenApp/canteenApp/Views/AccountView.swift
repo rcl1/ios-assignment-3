@@ -10,11 +10,12 @@ import SwiftUI
 struct AccountView: View {
     @State var userProfile = "A6MProfile"
     @State var userName = "NamelessONE"
-    
+    let color1 = Color(hue: 0.0858, saturation: 0.42, brightness: 0.93)
+    let color2 = Color(hue: 0.8554, saturation: 0.72, brightness: 0.82)
     
     var body: some View {
         ZStack {
-            LinearGradient(colors: [Color.green, Color.brown], startPoint:.top, endPoint: .bottom)
+            LinearGradient(gradient: Gradient(colors:[color2,color1]), startPoint:.bottomLeading, endPoint: .topTrailing)
             ScrollView {
                 VStack {
                     RoundView(icon : Image(userProfile)).offset(y: -50)
