@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>375444260460-gc6si924mlbfimp6k39n6l69uo14d99r.apps.googleusercontent.com</string>
+	<string>368076913050-j46fgvbpi2k9bu08bpmn6udgbqo85gjg.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.375444260460-gc6si924mlbfimp6k39n6l69uo14d99r</string>
+	<string>com.googleusercontent.apps.368076913050-j46fgvbpi2k9bu08bpmn6udgbqo85gjg</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDbvolzF2SUg93nbVpkabBzX6vncnTzSD4</string>
+	<string>AIzaSyAoLBTGuEgS2LvI3Mo2mp-dX0wsqY0Jdkw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>375444260460</string>
+	<string>368076913050</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>vn.edu.rmit.canteenApp</string>
 	<key>PROJECT_ID</key>
-	<string>canteenapp-f2864</string>
+	<string>tutorialproject-d9b12</string>
 	<key>STORAGE_BUCKET</key>
-	<string>canteenapp-f2864.appspot.com</string>
+	<string>tutorialproject-d9b12.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:375444260460:ios:9284834f1af79eaee0ba49</string>
+	<string>1:368076913050:ios:c1593e824919b4cd562223</string>
 </dict>
 </plist>

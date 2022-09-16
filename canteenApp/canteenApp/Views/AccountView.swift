@@ -32,7 +32,7 @@ struct AccountView: View {
             ScrollView {
                 VStack {
                     //Profile picture, not changable at the moment
-                    RoundView(icon : Image(userProfile)).offset(y: -50)
+                    RoundViewDynamic(name: $userName).offset(y: -50)
                         .padding(.top, 70).padding(.bottom, -50)
                     //Username, dynamic
                     Text(userName).font(.system(size: 25))
