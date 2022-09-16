@@ -1,9 +1,15 @@
-//
-//  RoundView.swift
-//  Assignment1
-//
-//  Created by Flynn Pham on 06/08/2022.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 3
+  Author: Do Ha Minh Long
+  ID: s3634734
+  Created  date: 13/09/2022
+  Last modified: 13/09/2022
+  Acknowledgement:
+    Reused from Assignment 1
+*/
 import SwiftUI
 
 struct RoundView : View {
