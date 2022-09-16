@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AccountView: View {
-    @State var userProfile = "A6MProfile"
     @State var userName = ""
     @State var loginID = "b@test.com" // Replace with appropriate id in after Login View is finish
     
@@ -31,7 +30,7 @@ struct AccountView: View {
                 }
             ScrollView {
                 VStack {
-                    //Profile picture, not changable at the moment
+                    //Profile picture, change base on user name, can't be replace with user upload picture
                     RoundViewDynamic(name: $userName).offset(y: -50)
                         .padding(.top, 70).padding(.bottom, -50)
                     //Username, dynamic
@@ -45,7 +44,7 @@ struct AccountView: View {
                         }
                     }
                 }
-                 ///* DEBUG Buttons to test dynamic display
+                 /* DEBUG Buttons to test dynamic display
                 Button {
                     centralUserManager.addOrder(cost: 100, orderID: "GACHAAA")
                 } label: {
@@ -64,7 +63,7 @@ struct AccountView: View {
                 Text("SWITCH!!")
                 }
                  
-                 //*/
+                 */
             }
         }
     }
