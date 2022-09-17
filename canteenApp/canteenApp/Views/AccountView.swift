@@ -12,7 +12,8 @@ struct AccountView: View {
     @State var loginID = "b@test.com" // Replace with appropriate id in after Login View is finish
     
     //User data controller object, REPLACE WITH ENVIROMENT OBJECT AFTER OTHER VIEWS ARE COMPLETED
-    @StateObject var centralUserManager : UserManager = UserManager(user: nil)
+    @EnvironmentObject var centralUserManager : UserManager
+    @EnvironmentObject var authViewModel: AuthViewModel
 
     // COLOR FOR BACKGROUND
     let color1 = Color(hue: 0.0858, saturation: 0.42, brightness: 0.93)
@@ -30,6 +31,7 @@ struct AccountView: View {
                 }
             ScrollView {
                 VStack {
+                    
                     //Profile picture, change base on user name, can't be replace with user upload picture
                     RoundViewDynamic(name: $userName).offset(y: -50)
                         .padding(.top, 70).padding(.bottom, -50)
@@ -43,7 +45,20 @@ struct AccountView: View {
                             )
                         }
                     }
+                    
+                    Button {
+                        authViewModel.signOut()
+                    } label: {
+                        Text("Sign Out")
+                            .frame(width: 200, height: 50)
+                            .background(Color.blue)
+                            .cornerRadius(8)
+                            .foregroundColor(Color.white)
+                            .padding(.vertical)
+                    }
                 }
+                
+                
                  /* DEBUG Buttons to test dynamic display
                 Button {
                     centralUserManager.addOrder(cost: 100, orderID: "GACHAAA")
@@ -64,6 +79,8 @@ struct AccountView: View {
                 }
                  
                  */
+                
+                
             }
         }
     }

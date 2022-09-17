@@ -22,7 +22,7 @@ struct cantennAppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate //delegate
 
     @StateObject var itemViewModel = ItemViewModel()
-
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

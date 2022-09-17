@@ -13,6 +13,9 @@
 		3D7BE54C28D43BDC00F8F1BE /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BE54B28D43BDC00F8F1BE /* UserManager.swift */; };
 		3D7BE54E28D43DB800F8F1BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D7BE54D28D43DB800F8F1BE /* GoogleService-Info.plist */; };
 		3D7BE55028D4472000F8F1BE /* RoundViewDynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BE54F28D4472000F8F1BE /* RoundViewDynamic.swift */; };
+		5227F27A28D57D7700FFC318 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227F27928D57D7700FFC318 /* AuthViewModel.swift */; };
+		5227F27D28D57D8800FFC318 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227F27B28D57D8700FFC318 /* SignInView.swift */; };
+		5227F27E28D57D8800FFC318 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227F27C28D57D8800FFC318 /* SignUpView.swift */; };
 		CAC6B65C28C836FA00D8590A /* canteenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B65B28C836FA00D8590A /* canteenAppApp.swift */; };
 		CAC6B66028C836FB00D8590A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC6B65F28C836FB00D8590A /* Assets.xcassets */; };
 		CAC6B66328C836FB00D8590A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC6B66228C836FB00D8590A /* Preview Assets.xcassets */; };
@@ -36,6 +39,9 @@
 		3D7BE54B28D43BDC00F8F1BE /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		3D7BE54D28D43DB800F8F1BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3D7BE54F28D4472000F8F1BE /* RoundViewDynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundViewDynamic.swift; sourceTree = "<group>"; };
+		5227F27928D57D7700FFC318 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		5227F27B28D57D8700FFC318 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		5227F27C28D57D8800FFC318 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		CAC6B65828C836FA00D8590A /* canteenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = canteenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC6B65B28C836FA00D8590A /* canteenAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canteenAppApp.swift; sourceTree = "<group>"; };
 		CAC6B65F28C836FB00D8590A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 				CAC6B67528C838AB00D8590A /* ItemViewModel.swift */,
 				CAC6B67928C838D200D8590A /* Order.swift */,
 				3D2124FB28D18E2A00FC885B /* UserData.swift */,
+				5227F27928D57D7700FFC318 /* AuthViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -139,6 +146,8 @@
 				CAC6B68028C8394300D8590A /* FoodListView.swift */,
 				CAC6B68228C8395100D8590A /* OrdersListView.swift */,
 				CAC6B68428C850F200D8590A /* AccountView.swift */,
+				5227F27B28D57D8700FFC318 /* SignInView.swift */,
+				5227F27C28D57D8800FFC318 /* SignUpView.swift */,
 				3D2412BC28CF30A800BAD01C /* Component */,
 			);
 			path = Views;
@@ -228,14 +237,17 @@
 				3D2124F828D18BA100FC885B /* RoundView.swift in Sources */,
 				3D7BE54C28D43BDC00F8F1BE /* UserManager.swift in Sources */,
 				CAC6B67F28C8393200D8590A /* CreateOrderView.swift in Sources */,
+				5227F27A28D57D7700FFC318 /* AuthViewModel.swift in Sources */,
 				CAC6B68128C8394300D8590A /* FoodListView.swift in Sources */,
 				CAC6B67D28C8391000D8590A /* ContentView.swift in Sources */,
 				3D7BE55028D4472000F8F1BE /* RoundViewDynamic.swift in Sources */,
 				3D2124FC28D18E2A00FC885B /* UserData.swift in Sources */,
 				CAC6B67428C8389600D8590A /* FoodItem.swift in Sources */,
 				CAC6B68328C8395100D8590A /* OrdersListView.swift in Sources */,
+				5227F27E28D57D8800FFC318 /* SignUpView.swift in Sources */,
 				CAC6B68528C850F200D8590A /* AccountView.swift in Sources */,
 				CAC6B65C28C836FA00D8590A /* canteenAppApp.swift in Sources */,
+				5227F27D28D57D8800FFC318 /* SignInView.swift in Sources */,
 				CAC6B67A28C838D200D8590A /* Order.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
