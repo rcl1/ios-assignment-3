@@ -13,34 +13,38 @@ struct ContentView: View {
     @StateObject var centralUserManager : UserManager = UserManager(user: nil)  //First View
   
     var body: some View {
-        NavigationView {
-            if authViewModel.signedIn {
-                TabView{
-                    FoodListView()
-                        .tabItem{
-                            Label("Menu", systemImage: "list.dash")
-                        }
-                    OrdersListView()
-                        .tabItem{
-                            Label("Orders", systemImage: "bag")
-                        }
-                    AccountView()
+        ZStack {
+            NavigationView {
+                if authViewModel.signedIn {
+                    TabView{
+                        FoodListView()
+                            .tabItem{
+                                Label("Menu", systemImage: "list.dash")
+                            }
+                        OrdersListView()
+                            .tabItem{
+                                Label("Orders", systemImage: "bag")
+                            }
+                        AccountView()
+                            .environmentObject(authViewModel)
+                            .environmentObject(centralUserManager)
+                            .tabItem {
+                                Label("Account", systemImage: "bag")
+                            }
+                    } // end TabView
+                } else {
+                    SignInView()
                         .environmentObject(authViewModel)
                         .environmentObject(centralUserManager)
-                        .tabItem {
-                            Label("Account", systemImage: "bag")
-                        }
-                } // end TabView
-            } else {
-                SignInView()
-                    .environmentObject(authViewModel)
-                    .environmentObject(centralUserManager)
+                }
+                
             }
-            
+            .onAppear {
+                authViewModel.signedIn = authViewModel.isSignedIn
+            }
+            SplashScreen()
         }
-        .onAppear {
-            authViewModel.signedIn = authViewModel.isSignedIn
-        }
+        
     }
 }
 

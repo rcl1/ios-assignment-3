@@ -16,6 +16,10 @@
 		5227F27A28D57D7700FFC318 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227F27928D57D7700FFC318 /* AuthViewModel.swift */; };
 		5227F27D28D57D8800FFC318 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227F27B28D57D8700FFC318 /* SignInView.swift */; };
 		5227F27E28D57D8800FFC318 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227F27C28D57D8800FFC318 /* SignUpView.swift */; };
+		5275ED1028D59F0500FCB8EC /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5275ED0F28D59F0500FCB8EC /* SplashScreen.swift */; };
+		5275ED1328D59FDB00FCB8EC /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5275ED1228D59FDB00FCB8EC /* SDWebImageSwiftUI */; };
+		5275ED1528D5A2F300FCB8EC /* Icon.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5275ED1428D5A2F300FCB8EC /* Icon.gif */; };
+		5275ED3828D5B00100FCB8EC /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5275ED3728D5B00100FCB8EC /* logo.png */; };
 		CAC6B65C28C836FA00D8590A /* canteenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6B65B28C836FA00D8590A /* canteenAppApp.swift */; };
 		CAC6B66028C836FB00D8590A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC6B65F28C836FB00D8590A /* Assets.xcassets */; };
 		CAC6B66328C836FB00D8590A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC6B66228C836FB00D8590A /* Preview Assets.xcassets */; };
@@ -42,6 +46,9 @@
 		5227F27928D57D7700FFC318 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		5227F27B28D57D8700FFC318 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		5227F27C28D57D8800FFC318 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		5275ED0F28D59F0500FCB8EC /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		5275ED1428D5A2F300FCB8EC /* Icon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Icon.gif; sourceTree = "<group>"; };
+		5275ED3728D5B00100FCB8EC /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		CAC6B65828C836FA00D8590A /* canteenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = canteenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC6B65B28C836FA00D8590A /* canteenAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canteenAppApp.swift; sourceTree = "<group>"; };
 		CAC6B65F28C836FB00D8590A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5275ED1328D59FDB00FCB8EC /* SDWebImageSwiftUI in Frameworks */,
 				CAC6B66D28C837ED00D8590A /* FirebaseAuth in Frameworks */,
 				CAC6B66F28C837ED00D8590A /* FirebaseFirestore in Frameworks */,
 				CAC6B67128C837ED00D8590A /* FirebaseFirestoreSwift in Frameworks */,
@@ -88,6 +96,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		5275ED3628D5AFC300FCB8EC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5275ED1428D5A2F300FCB8EC /* Icon.gif */,
+				5275ED3728D5B00100FCB8EC /* logo.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		CAC6B64F28C836FA00D8590A = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +124,7 @@
 		CAC6B65A28C836FA00D8590A /* canteenApp */ = {
 			isa = PBXGroup;
 			children = (
+				5275ED3628D5AFC300FCB8EC /* Assets */,
 				3D7BE54A28D43BBF00F8F1BE /* Controller */,
 				CAC6B67228C8388000D8590A /* Models */,
 				CAC6B67B28C8390300D8590A /* Views */,
@@ -142,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				CAC6B67C28C8391000D8590A /* ContentView.swift */,
+				5275ED0F28D59F0500FCB8EC /* SplashScreen.swift */,
 				CAC6B67E28C8393200D8590A /* CreateOrderView.swift */,
 				CAC6B68028C8394300D8590A /* FoodListView.swift */,
 				CAC6B68228C8395100D8590A /* OrdersListView.swift */,
@@ -173,6 +192,7 @@
 				CAC6B66C28C837ED00D8590A /* FirebaseAuth */,
 				CAC6B66E28C837ED00D8590A /* FirebaseFirestore */,
 				CAC6B67028C837ED00D8590A /* FirebaseFirestoreSwift */,
+				5275ED1228D59FDB00FCB8EC /* SDWebImageSwiftUI */,
 			);
 			productName = canteenApp;
 			productReference = CAC6B65828C836FA00D8590A /* canteenApp.app */;
@@ -204,6 +224,7 @@
 			mainGroup = CAC6B64F28C836FA00D8590A;
 			packageReferences = (
 				CAC6B66B28C837ED00D8590A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				5275ED1128D59FDB00FCB8EC /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = CAC6B65928C836FA00D8590A /* Products */;
 			projectDirPath = "";
@@ -220,6 +241,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAC6B66328C836FB00D8590A /* Preview Assets.xcassets in Resources */,
+				5275ED3828D5B00100FCB8EC /* logo.png in Resources */,
+				5275ED1528D5A2F300FCB8EC /* Icon.gif in Resources */,
 				3D7BE54E28D43DB800F8F1BE /* GoogleService-Info.plist in Resources */,
 				CAC6B66028C836FB00D8590A /* Assets.xcassets in Resources */,
 			);
@@ -232,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5275ED1028D59F0500FCB8EC /* SplashScreen.swift in Sources */,
 				CAC6B67628C838AB00D8590A /* ItemViewModel.swift in Sources */,
 				3D2124FA28D18BB200FC885B /* TableView.swift in Sources */,
 				3D2124F828D18BA100FC885B /* RoundView.swift in Sources */,
@@ -449,6 +473,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5275ED1128D59FDB00FCB8EC /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		CAC6B66B28C837ED00D8590A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -460,6 +492,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5275ED1228D59FDB00FCB8EC /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5275ED1128D59FDB00FCB8EC /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		CAC6B66C28C837ED00D8590A /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CAC6B66B28C837ED00D8590A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
